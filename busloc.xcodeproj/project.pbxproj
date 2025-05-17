@@ -6,63 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		06C7579E2D8D5F4700D2BA76 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 06C757832D8D5F4600D2BA76 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 06C7578A2D8D5F4600D2BA76;
-			remoteInfo = busloc;
-		};
-		06C757A82D8D5F4700D2BA76 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 06C757832D8D5F4600D2BA76 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 06C7578A2D8D5F4600D2BA76;
-			remoteInfo = busloc;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		06C7578B2D8D5F4600D2BA76 /* busloc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = busloc.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		06C7579D2D8D5F4700D2BA76 /* buslocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = buslocTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		06C757A72D8D5F4700D2BA76 /* buslocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = buslocUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		060D10A32DD33C55006D66FD /* Exceptions for "busloc" folder in "busloc" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 06C7578A2D8D5F4600D2BA76 /* busloc */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		06C7578D2D8D5F4600D2BA76 /* busloc */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				060D10A32DD33C55006D66FD /* Exceptions for "busloc" folder in "busloc" target */,
+			);
 			path = busloc;
-			sourceTree = "<group>";
-		};
-		06C757A02D8D5F4700D2BA76 /* buslocTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = buslocTests;
-			sourceTree = "<group>";
-		};
-		06C757AA2D8D5F4700D2BA76 /* buslocUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = buslocUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		06C757882D8D5F4600D2BA76 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		06C7579A2D8D5F4700D2BA76 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		06C757A42D8D5F4700D2BA76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,8 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				06C7578D2D8D5F4600D2BA76 /* busloc */,
-				06C757A02D8D5F4700D2BA76 /* buslocTests */,
-				06C757AA2D8D5F4700D2BA76 /* buslocUITests */,
 				06C7578C2D8D5F4600D2BA76 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,8 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				06C7578B2D8D5F4600D2BA76 /* busloc.app */,
-				06C7579D2D8D5F4700D2BA76 /* buslocTests.xctest */,
-				06C757A72D8D5F4700D2BA76 /* buslocUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,52 +83,6 @@
 			productReference = 06C7578B2D8D5F4600D2BA76 /* busloc.app */;
 			productType = "com.apple.product-type.application";
 		};
-		06C7579C2D8D5F4700D2BA76 /* buslocTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 06C757B42D8D5F4700D2BA76 /* Build configuration list for PBXNativeTarget "buslocTests" */;
-			buildPhases = (
-				06C757992D8D5F4700D2BA76 /* Sources */,
-				06C7579A2D8D5F4700D2BA76 /* Frameworks */,
-				06C7579B2D8D5F4700D2BA76 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				06C7579F2D8D5F4700D2BA76 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				06C757A02D8D5F4700D2BA76 /* buslocTests */,
-			);
-			name = buslocTests;
-			packageProductDependencies = (
-			);
-			productName = buslocTests;
-			productReference = 06C7579D2D8D5F4700D2BA76 /* buslocTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		06C757A62D8D5F4700D2BA76 /* buslocUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 06C757B72D8D5F4700D2BA76 /* Build configuration list for PBXNativeTarget "buslocUITests" */;
-			buildPhases = (
-				06C757A32D8D5F4700D2BA76 /* Sources */,
-				06C757A42D8D5F4700D2BA76 /* Frameworks */,
-				06C757A52D8D5F4700D2BA76 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				06C757A92D8D5F4700D2BA76 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				06C757AA2D8D5F4700D2BA76 /* buslocUITests */,
-			);
-			name = buslocUITests;
-			packageProductDependencies = (
-			);
-			productName = buslocUITests;
-			productReference = 06C757A72D8D5F4700D2BA76 /* buslocUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,14 +95,6 @@
 				TargetAttributes = {
 					06C7578A2D8D5F4600D2BA76 = {
 						CreatedOnToolsVersion = 16.2;
-					};
-					06C7579C2D8D5F4700D2BA76 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 06C7578A2D8D5F4600D2BA76;
-					};
-					06C757A62D8D5F4700D2BA76 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 06C7578A2D8D5F4600D2BA76;
 					};
 				};
 			};
@@ -201,28 +113,12 @@
 			projectRoot = "";
 			targets = (
 				06C7578A2D8D5F4600D2BA76 /* busloc */,
-				06C7579C2D8D5F4700D2BA76 /* buslocTests */,
-				06C757A62D8D5F4700D2BA76 /* buslocUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		06C757892D8D5F4600D2BA76 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		06C7579B2D8D5F4700D2BA76 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		06C757A52D8D5F4700D2BA76 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,34 +135,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		06C757992D8D5F4700D2BA76 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		06C757A32D8D5F4700D2BA76 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		06C7579F2D8D5F4700D2BA76 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 06C7578A2D8D5F4600D2BA76 /* busloc */;
-			targetProxy = 06C7579E2D8D5F4700D2BA76 /* PBXContainerItemProxy */;
-		};
-		06C757A92D8D5F4700D2BA76 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 06C7578A2D8D5F4600D2BA76 /* busloc */;
-			targetProxy = 06C757A82D8D5F4700D2BA76 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		06C757AF2D8D5F4700D2BA76 /* Debug */ = {
@@ -399,8 +268,9 @@
 				DEVELOPMENT_TEAM = N3632MGYA4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = busloc/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Aplikasi ini memerlukan lokasi untuk mencari rute yang optimal untuk pengguna";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -428,8 +298,9 @@
 				DEVELOPMENT_TEAM = N3632MGYA4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = busloc/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Aplikasi ini memerlukan lokasi untuk mencari rute yang optimal untuk pengguna";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -443,78 +314,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		06C757B52D8D5F4700D2BA76 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N3632MGYA4;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = lesson.buslocTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/busloc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/busloc";
-			};
-			name = Debug;
-		};
-		06C757B62D8D5F4700D2BA76 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N3632MGYA4;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = lesson.buslocTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/busloc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/busloc";
-			};
-			name = Release;
-		};
-		06C757B82D8D5F4700D2BA76 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N3632MGYA4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = lesson.buslocUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = busloc;
-			};
-			name = Debug;
-		};
-		06C757B92D8D5F4700D2BA76 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N3632MGYA4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = lesson.buslocUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = busloc;
 			};
 			name = Release;
 		};
@@ -535,24 +334,6 @@
 			buildConfigurations = (
 				06C757B22D8D5F4700D2BA76 /* Debug */,
 				06C757B32D8D5F4700D2BA76 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		06C757B42D8D5F4700D2BA76 /* Build configuration list for PBXNativeTarget "buslocTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				06C757B52D8D5F4700D2BA76 /* Debug */,
-				06C757B62D8D5F4700D2BA76 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		06C757B72D8D5F4700D2BA76 /* Build configuration list for PBXNativeTarget "buslocUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				06C757B82D8D5F4700D2BA76 /* Debug */,
-				06C757B92D8D5F4700D2BA76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
