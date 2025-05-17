@@ -9,76 +9,130 @@ import MapKit
 import SwiftUI
 
 struct SearchBarLocation: View {
-    @State private var searchText = ""
-    @State private var searchResults: [MKMapItem] = []
-
+    @StateObject private var locationManager: LocationManager = LocationManager()
+    @StateObject var viewModel: MapSearchViewModel
     var body: some View {
         VStack(spacing: 0) {
             // Search field
-            TextField(
-                "Cari lokasi di BSD",
-                text: $searchText,
-                onCommit: performSearch
-            )
+            HStack {
+                Image(systemName: "location.fill")
+                    .foregroundColor(.red)
+                TextField(
+                    "",
+                    text: $viewModel.searchTextStart,
+                    prompt: Text("Cari lokasi awal...")
+                        .foregroundColor(.gray),
+                )
+                .foregroundColor(viewModel.searchTextStart.isEmpty ? .gray : .black)
+                .onSubmit {
+                    viewModel.performSearch()
+                }
+                .onTapGesture {
+                    
+                }
+            }
             .padding()
-            .background(Color(.systemGray6))
-            .cornerRadius(8)
-            TextField(
-                "Cari lokasi di BSD 2",
-                text: $searchText,
-                onCommit: performSearch
-            )
+            .background(.white)
+            .clipShape(CustomRounded(radius: 20, corners: [.topLeft, .topRight],),)
+            
+            HStack {
+                Image(systemName: "location.fill")
+                    .foregroundColor(.blue)
+                TextField(
+                    "",
+                    text: $viewModel.searchTextDestination,
+                    prompt: Text("Cari lokasi tujuan...")
+                        .foregroundColor(.gray),
+                )
+                .foregroundColor(viewModel.searchTextDestination.isEmpty ? .gray : .black)
+                .onSubmit {
+                    viewModel.performSearch(isStartPoint: false)
+                }
+            }
             .padding()
-            .background(Color(.systemGray6))
-            .cornerRadius(8)
+            .background(.white)
+            .clipShape(
+                CustomRounded(
+                    radius: 20,
+                    corners:
+                        [
+                            .bottomLeft,
+                            .bottomRight
+                        ]
+                )
+            )
+            if(!viewModel.searchResults.isEmpty) {
+                ScrollView {
+                    LazyVStack(spacing: 12) {
+                        ForEach(viewModel.searchResults, id: \.self) { item in
+                            HStack(alignment: .top, spacing: 12) {
+                                Image(systemName: "mappin.circle.fill")
+                                    .foregroundColor(.blue)
+                                    .font(.title2)
 
-            // Hasil pencarianApp
-            List(searchResults, id: \.self) { item in
-                HStack {
-                    Image(systemName: "mappin.circle.fill")
-                        .foregroundColor(.blue)
-                    VStack(alignment: .leading) {
-                        Text(item.name ?? "Tidak diketahui")
-                            .font(.headline)
-                        if let address = item.placemark.title {
-                            Text(address)
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
+                                VStack(alignment: .leading, spacing: 4) {
+                                    Text(item.name ?? "Tidak diketahui")
+                                        .font(.headline)
+                                        .foregroundColor(.black)
+                                        .multilineTextAlignment(.leading)
+
+                                    if let address = item.placemark.title {
+                                        Text(address)
+                                            .font(.subheadline)
+                                            .foregroundColor(.gray)
+                                            .multilineTextAlignment(.leading)
+                                    }
+                                }
+                            }
+                            .onTapGesture {
+                                viewModel.changeStartPoint(to: item)
+                            }
+                            .padding()
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .background(Color.white)
+                            .cornerRadius(12)
+                            .shadow(color: Color.black.opacity(0.05), radius: 4, x: 0, y: 2)
+                        }
+                    }
+                    .padding(.top)
+                }
+                .padding(
+                    [.top], 20
+                )
+            }
+            if(!viewModel.searchRouteResult.isEmpty) {
+                ScrollView {
+                    LazyVStack(spacing: 12) {
+                        ForEach(viewModel.searchRouteResult, id: \.self) { item in
+                            RouteResultCard(
+                                time: "\(item.totalDuration)",
+                                routeName: "Rute \(item.route.busNumber)",
+                                route: "\(item.stopNames.first!) - \(item.stopNames.last!)",
+                                stopcount: item.numberOfStops,
+                            )
+                            .onTapGesture {
+                                viewModel.selectedRoute = item
+                            }
+                            .shadow(color: Color.black.opacity(0.05), radius: 4, x: 0, y: 2)
+                            .padding([.bottom], 12)
                         }
                     }
                 }
+                .padding(
+                    [.top], 20
+                )
+            }
+            Spacer()
+        }
+        .onAppear{
+            if locationManager.userLocation != nil {
+                viewModel.performSearch()
             }
         }
-
-    }
-
-    func performSearch() {
-        let request = MKLocalSearch.Request()
-        request.naturalLanguageQuery = "\(searchText) BSD"
-
-        request.region = MKCoordinateRegion(
-            center: CLLocationCoordinate2D(
-                latitude: -6.3054,
-                longitude: 106.6544
-            ),
-            span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
-        )
-
-        let search = MKLocalSearch(request: request)
-        search.start { response, error in
-            if let response = response {
-                self.searchResults = response.mapItems.filter { item in
-                    (item.name?.localizedCaseInsensitiveContains("BSD") ?? false)
-                        || (item.placemark.title?
-                            .localizedCaseInsensitiveContains("BSD") ?? false)
-                }
-            } else {
-                self.searchResults = []
-            }
-        }
+        .padding()
     }
 }
 
 #Preview {
-    SearchBarLocation()
+    SearchBarLocation(viewModel: MapSearchViewModel())
 }

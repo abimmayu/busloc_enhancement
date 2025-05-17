@@ -1,3 +1,11 @@
+//
+//  ScheduleLoader.swift
+//  busloc
+//
+//  Created by Abim on 16/05/25.
+//
+import Foundation
+
 class ScheduleLoader {
     static func load() -> [BusSchedule] {
         guard let url = Bundle.main.url(forResource: "Schedule", withExtension: "json") else {

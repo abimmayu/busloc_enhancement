@@ -14,40 +14,10 @@
             filePath = "busloc/Features/MapSearch/MapSearchViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
             landmarkName = "findFastestRoutes()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D0FA23FE-B36F-4FF9-877E-50F28ECC64D8 - efb0576b2c38fdfe"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "busloc.MapSearchViewModel.performSearch(isStartPoint: Swift.Bool) -&gt; ()"
-                  moduleName = "busloc.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abim/Documents/project/busloc/busloc/Features/MapSearch/MapSearchViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "130"
-                  endingLineNumber = "130">
-               </Location>
-               <Location
-                  uuid = "D0FA23FE-B36F-4FF9-877E-50F28ECC64D8 - a9d2d8d53b27de41"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "busloc.MapSearchViewModel.findFastestRoutes() -&gt; ()"
-                  moduleName = "busloc.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abim/Documents/project/busloc/busloc/Features/MapSearch/MapSearchViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "130"
-                  endingLineNumber = "130">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -60,40 +30,10 @@
             filePath = "busloc/Features/MapSearch/MapSearchViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "findFastestRoutes()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "AE62215C-0DB6-4DCD-9594-FC091696275D - a9d2d8d53b27c689"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "busloc.MapSearchViewModel.findFastestRoutes() -&gt; ()"
-                  moduleName = "busloc.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abim/Documents/project/busloc/busloc/Features/MapSearch/MapSearchViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74">
-               </Location>
-               <Location
-                  uuid = "AE62215C-0DB6-4DCD-9594-FC091696275D - a9d2d8d53b27c6a8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "busloc.MapSearchViewModel.findFastestRoutes() -&gt; ()"
-                  moduleName = "busloc.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abim/Documents/project/busloc/busloc/Features/MapSearch/MapSearchViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "73"
-                  endingLineNumber = "73">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -106,8 +46,8 @@
             filePath = "busloc/Features/MapSearch/MapSearchViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "findFastestRoutes()"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,9 +62,25 @@
             filePath = "busloc/Features/MapSearch/MapSearchViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "findFastestRoutes()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "204FE0EF-4117-4599-844A-8BF486113861"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "busloc/Features/MapSearch/MapSearchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "updatePolylineForSelectedRoute()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

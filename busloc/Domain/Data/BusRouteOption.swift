@@ -1,16 +1,14 @@
-struct BusRouteOption {
+//
+//  BusRouteOption.swift
+//  busloc
+//
+//  Created by Abim on 16/05/25.
+//
+import Foundation
+
+struct BusRouteOption: Hashable {
     let session: Int
     let busNumber: Int
     let route: [BusSchedule]
-    let duration: TimeInterval
-}
-
-struct CompleteRouteOption {
-    let route: BusRouteOption
-    let walkingTimeToStart: TimeInterval
-    let walkingTimeToEnd: TimeInterval
-    
-    var totalDuration: TimeInterval {
-        walkingTimeToStart + route.duration + walkingTimeToEnd
-    }
+    let duration: Int
 }

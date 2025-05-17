@@ -86,12 +86,18 @@ struct HomeView: View {
                 }
                 .tag(1)
             
-            MapViewControllerWrapper()
-                    .background(Color.white)
-            .tabItem {
-                Label("Map", systemImage: "map.fill")
-            }
-            .tag(2)
+//            MapViewControllerWrapper()
+//                    .background(Color.white)
+//            .tabItem {
+//                Label("Map", systemImage: "map.fill")
+//            }
+//            .tag(2)
+            MapSearchView()
+                .background(.white)
+                .tabItem {
+                    Label("Map Search", systemImage: "location.fill")
+                }
+                .tag(2)
         }
         .background(Color.white)
         .navigationBarTitle(

@@ -1,3 +1,11 @@
+//
+//  LocationManager.swift
+//  busloc
+//
+//  Created by Abim on 13/05/25.
+//
+
+
 import Foundation
 import CoreLocation
 
@@ -19,7 +27,6 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
     }
 
-    // Update lokasi ketika berubah
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             DispatchQueue.main.async {
@@ -28,7 +35,6 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         }
     }
 
-    // Update status izin
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         self.authorizationStatus = manager.authorizationStatus
     }

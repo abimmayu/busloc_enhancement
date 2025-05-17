@@ -1,0 +1,128 @@
+//
+//  BusStop.swift
+//  busloc
+//
+//  Created by Abim on 15/05/25.
+//
+
+struct BusStop: Codable {
+    let id: String
+    let name: String
+    let latitude: Double
+    let longitude: Double
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "id"
+        case name = "name"
+        case latitude = "lat"
+        case longitude = "lng"
+    }
+}
+
+let busStops = [
+    BusStop(id: "7cfe4df1-4a86-45fd-bb00-45fc9ce82f62", name: "Terminal Intermoda", latitude: -6.321395070998093, longitude: 106.64347051762091),
+    BusStop(id: "855fd9d1-95e9-4fc5-ab87-48bc4088de25", name: "Simplicity 2", latitude: -6.31305199945775, longitude: 106.64257067055215),
+    BusStop(id: "b8d01bec-265e-41be-9d85-364f06c88c02", name: "Edutown 1", latitude: -6.302448467321801, longitude: 106.64174869507501),
+    BusStop(id: "8ab0cce4-8849-4eab-b4c8-b392649527c6", name: "Edutown 2", latitude: -6.30138984931961, longitude: 106.64161596446695),
+    BusStop(id: "263e86c3-50ec-4d2f-bced-8606d27e90d1", name: "ICE 1", latitude: -6.297692197100232, longitude: 106.63664064111805),
+    BusStop(id: "db55711c-6e91-4935-96a3-15cc81d46d29", name: "ICE 2", latitude: -6.3023126053475655, longitude: 106.63529130419488),
+    BusStop(id: "8340e256-6aaf-485e-a070-032480dcddb6", name: "ICE 6", latitude: -6.299785361863937, longitude: 106.6353910706319),
+    BusStop(id: "f785f6c0-0fad-47b2-b633-aab724024673", name: "Prestigia", latitude: -6.294584433077416, longitude: 106.63434240825687),
+    BusStop(id: "f70fb009-69b9-48a1-82be-91ec45bc317c", name: "The Mozia 1", latitude: -6.291748489952814, longitude: 106.62850104503484),
+    BusStop(id: "11fd85a8-0b2e-4664-bf17-14b627302885", name: "Piazza Mozia", latitude: -6.290562761354525, longitude: 106.62767082443878),
+    BusStop(id: "a2ccce2e-c568-4f3e-b081-19227cde2893", name: "Tabebuya", latitude: -6.29186512888269, longitude: 106.62271596073279),
+    BusStop(id: "f4a54878-f419-4cd6-aedd-02c8ea29c3ec", name: "Vanya Park", latitude: -6.2954806180488125, longitude: 106.62190121423218),
+    BusStop(id: "e212b818-be3f-4e57-8190-b0f5e8a43cdd", name: "The Mozia 2", latitude: -6.291632516618698, longitude: 106.6286411904564),
+    BusStop(id: "ea9ff2e3-96ff-498d-8055-8000c24780eb", name: "Illustria", latitude: -6.29408365144877, longitude: 106.63432096916166),
+    BusStop(id: "66c959e4-02c6-4554-b104-9392f616fa71", name: "ICE 5", latitude: -6.297423153616533, longitude: 106.63615193675888),
+    BusStop(id: "e627e440-d700-46dc-9345-be1e2f0d9654", name: "CBD Barat 1", latitude: -6.29962342903189, longitude: 106.64128981620078),
+    BusStop(id: "59073013-77ef-41fc-bd53-3fa355dcf8cb", name: "CBD Barat 2", latitude: -6.302362006986219, longitude: 106.642081066663),
+    BusStop(id: "c267345f-10b3-4f52-98b1-67940607a1f9", name: "Simplicity 1", latitude: -6.313525997775673, longitude: 106.64317921009939),
+    BusStop(id: "8a2544c7-ea9f-4e35-bb3a-0b90a817bb9e", name: "The Breeze", latitude: -6.30137251759611, longitude: 106.65314156249508),
+    BusStop(id: "ab2c3ab8-ce3a-4dae-a125-e50a67f3efa7", name: "CBD Timur 1", latitude: -6.303523555877617, longitude: 106.65011200329019),
+    BusStop(id: "24103b32-44cf-4f6f-824b-1887f0165d84", name: "Lobby AEON Mall", latitude: -6.303819971636671, longitude: 106.64350801837553),
+    BusStop(id: "d3aa9d7d-4675-4d9a-a2a8-2dde8151ebd3", name: "AEON Mall 2", latitude: -6.302993818027525, longitude: 106.64368019350935),
+    BusStop(id: "e639ab6f-69a4-4ece-9e28-c2220a273702", name: "CBD Utara 3", latitude: -6.298913999024761, longitude: 106.6430613411044),
+    BusStop(id: "bad15c06-20d2-4b0b-b513-f54ed87d303b", name: "CBD Timur 2", latitude: -6.301145272284793, longitude: 106.64867064963207),
+    BusStop(id: "b15d0594-a74a-4b18-b489-01af6f5f9f8f", name: "Nava Park 1", latitude: -6.2997019328864114, longitude: 106.64981064953798),
+    BusStop(id: "930153df-6d63-478b-a5ca-a76a19fa334c", name: "Green Cove", latitude: -6.300314214062205, longitude: 106.6598819081678),
+    BusStop(id: "2b89e220-ca98-4f2e-8b25-8f14920d1ba4", name: "Froggy", latitude: -6.2972639941591515, longitude: 106.64051022534136),
+    BusStop(id: "ecbd7ed9-b1b0-4633-929e-0a4d9923966e", name: "Gramedia", latitude: -6.291282922710015, longitude: 106.63946299785133),
+    BusStop(id: "f3582c54-20c0-4978-a613-7729ad314039", name: "Astra", latitude: -6.289379692453307, longitude: 106.63931110230988),
+    BusStop(id: "00e600da-0256-4233-98b2-3aea50aa640c", name: "Courts Mega Store", latitude: -6.2863929675786, longitude: 106.63886246493024),
+    BusStop(id: "3b72d72b-6c7d-4803-82a1-1e87f37d8b9e", name: "QBIG 1", latitude: -6.284601727817488, longitude: 106.63839951082159),
+    BusStop(id: "32c4c6ea-6d6d-4407-a9ac-7a7a0736f840", name: "Lulu", latitude: -6.28109504676495, longitude: 106.6363804573096),
+    BusStop(id: "46ebdeb1-c1ef-483b-ad45-39033622e055", name: "Greenwich Park 1", latitude: -6.277445618599404, longitude: 106.63511053806099),
+    BusStop(id: "b328f0d0-6087-451f-abb9-4a0a3dc9348d", name: "Greenwich Park Office", latitude: -6.27691249977648, longitude: 106.63404227387217),
+    BusStop(id: "60571dbe-2b8a-4846-97d2-7635028bdd35", name: "Jadeite", latitude: -6.276590884607286, longitude: 106.63977047578516),
+    BusStop(id: "32c28f06-1f40-474d-b2f7-ea46690b7f5f", name: "De Maja", latitude: -6.2811122482516675, longitude: 106.6396404451645),
+    BusStop(id: "df898545-f0fa-4df5-a69b-52472a52c72c", name: "De Heliconia 2", latitude: -6.283502216284178, longitude: 106.64116991355976),
+    BusStop(id: "b58657ee-396f-4db9-bd26-e6d91cfade2d", name: "De Nara", latitude: -6.285172627665123, longitude: 106.64389181877655),
+    BusStop(id: "138fd22f-f4ca-42a1-a88f-8a13e8648e18", name: "De Park 2", latitude: -6.287212040407251, longitude: 106.6489208635308),
+    BusStop(id: "3f253e94-62b3-45a2-843d-873770ab7cc1", name: "GOP 1", latitude: -6.301751977287821, longitude: 106.64918202222856),
+    BusStop(id: "fdbc3093-360e-4cbd-9464-92edb29758d6", name: "GOP 2", latitude: -6.301145272284793, longitude: 106.64867064963207),
+    BusStop(id: "91a1adf8-d1f8-4dc0-8e5b-8f987d9dc40c", name: "CBD Selatan", latitude: -6.303583299387022, longitude: 106.6484200581822),
+    BusStop(id: "f962ede0-446f-4eb3-8433-469b2bf4e658", name: "SML Plaza", latitude: -6.30229332698037, longitude: 106.65125296413171),
+    BusStop(id: "38099e71-c092-45e2-80ba-eaf35f4ad0df", name: "Casa de Parco 2", latitude: -6.305409107932724, longitude: 106.65270204752905),
+    BusStop(id: "f47473ca-d0eb-47c8-9c8b-863a9f34ca59", name: "Digital Hub 1", latitude: -6.3075923575634505, longitude: 106.6538699067729),
+    BusStop(id: "9babc9a9-aa44-4575-a64a-c664c4ed6633", name: "Digital Hub 2", latitude: -6.309683549533154, longitude: 106.65411376937946),
+    BusStop(id: "c2efdabd-0927-4331-9562-b0ef12df4d31", name: "Verdant View", latitude: -6.313721998140315, longitude: 106.64863973008102),
+    BusStop(id: "d2fcf957-1952-40c0-ae18-87cbd295bb45", name: "Eternity", latitude: -6.314893316454006, longitude: 106.64621058850614),
+    BusStop(id: "94c4cb22-845f-43fd-96ba-a8f57d426662", name: "Icon Centro", latitude: -6.3147520219122795, longitude: 106.64625082163884),
+    BusStop(id: "f9b8e6e6-c653-4061-9a7c-23a18983cd16", name: "Horizon Broadway", latitude: -6.3133632559799, longitude: 106.65044134307637),
+    BusStop(id: "3e6fd02e-0ea2-41ed-a7e4-2e072a180950", name: "Xtreme Park", latitude: -6.309971200250917, longitude: 106.65384853007873),
+    BusStop(id: "b5e1391c-a4c8-4ad4-a8aa-229e055ee435", name: "Saveria", latitude: -6.307481719715395, longitude: 106.65362180245468),
+    BusStop(id: "fdacf2d8-6967-4f33-ba54-67d3c2132f6d", name: "Casa de Parco 1", latitude: -6.305703032495533, longitude: 106.65269131869367),
+    BusStop(id: "21439289-16cd-4e0e-b197-012232ba5121", name: "AEON Mall 1", latitude: -6.303283078473884, longitude: 106.64344013580664),
+    BusStop(id: "65ce058a-9a1b-4835-953c-819f60511362", name: "Simpang Foresta", latitude: -6.299231381427246, longitude: 106.64793122558913),
+    BusStop(id: "f8d41dc9-7188-4d8c-97c6-98bc6b766be2", name: "Allevare", latitude: -6.297151815465197, longitude: 106.64702995808292),
+    BusStop(id: "484726e0-9ebe-4eb9-b343-063528fd3ba3", name: "Fiore", latitude: -6.296726048694096, longitude: 106.64455976471747),
+    BusStop(id: "eecdef6e-5643-48de-a003-2e1fce5d9f69", name: "Studento 1", latitude: -6.295624032184595, longitude: 106.64207992170829),
+    BusStop(id: "12f1c0b6-13cb-4008-9460-668d0f4bcf7a", name: "Naturale", latitude: -6.293821670643845, longitude: 106.64274806590228),
+    BusStop(id: "26aa5f1f-ab64-43b5-9a2f-e8d223cc6d30", name: "Fresco", latitude: -6.29079070939127, longitude: 106.6452610865186),
+    BusStop(id: "0b48a9d0-dcf1-40bc-9ac0-ef4db000f5e8", name: "Primavera", latitude: -6.29136991023504, longitude: 106.64832182907611),
+    BusStop(id: "7b4c687b-9c3f-4ff3-8c81-9047cb17b768", name: "Foresta 2", latitude: -6.290380411094191, longitude: 106.64963513399529),
+    BusStop(id: "8bf4e021-8cb4-4b68-ba9a-01ff10720820", name: "De Park 1", latitude: -6.287204708696528, longitude: 106.64874249664256),
+    BusStop(id: "6df742d1-3e12-48a6-9035-7101d1abdf3d", name: "De Frangipani", latitude: -6.2852132854912375, longitude: 106.64358135310265),
+    BusStop(id: "4b000dde-791f-4af7-bfbc-925265b16a20", name: "De Heliconia 1", latitude: -6.283751948007541, longitude: 106.64130081046231),
+    BusStop(id: "85c1be4f-ee0f-41a7-82a0-7a10dee8f8f5", name: "De Brassia", latitude: -6.28134086695189, longitude: 106.63948152427737),
+    BusStop(id: "1e7e04bb-7bd3-460a-ae32-9336f2062aab", name: "Greenwich Park 2", latitude: -6.27725232438218, longitude: 106.63526007120416),
+    BusStop(id: "3a3b8209-bca1-4286-8e6d-a361f6a51093", name: "QBIG 2", latitude: -6.280661249254164, longitude: 106.63651393845414),
+    BusStop(id: "00136195-8ce3-433c-b5ca-7fceb440813b", name: "QBIG 3", latitude: -6.28341046386721, longitude: 106.63779100862217),
+    BusStop(id: "b1bf6e3c-8966-49d8-99f9-3f623b74d0ab", name: "BCA", latitude: -6.2877006368768065, longitude: 106.63932089413781),
+    BusStop(id: "f3390057-0937-4c4b-97a8-050a356510b7", name: "FBL 2", latitude: -6.291153618990909, longitude: 106.63978285125619),
+    BusStop(id: "8824c5e5-e310-4ed1-9920-1837dea3de50", name: "FBL 1", latitude: -6.29603010957169, longitude: 106.64051654639044),
+    BusStop(id: "31d52ee1-d9af-4d46-a5f0-92de645fd31d", name: "Cosmo", latitude: -6.312089774863059, longitude: 106.6486802329947),
+    BusStop(id: "cd41ca47-57b4-4075-b6fc-4c0560d469df", name: "SWA 2", latitude: -6.299631745627517, longitude: 106.66244220697418),
+    BusStop(id: "ba1de905-99a2-4b7b-99e2-7a59f993beb7", name: "Giant", latitude: -6.2985128420711485, longitude: 106.66724071279411),
+    BusStop(id: "859a053a-7d14-4af8-993f-13636cdf705d", name: "Eka Hospital 1", latitude: -6.299071647914808, longitude: 106.67034028625251),
+    BusStop(id: "e7a5f749-ceda-4ebe-a3de-29aa890b8e82", name: "Puspita Loka", latitude: -6.295401970294843, longitude: 106.67767059883266),
+    BusStop(id: "203ca9de-079f-492e-83f4-93f603777a1a", name: "Polsek Serpong", latitude: -6.296043931490136, longitude: 106.6813108899353),
+    BusStop(id: "641edcd0-0f02-40fd-81aa-3dbdfe76645f", name: "Ruko Madrid", latitude: -6.301990169386453, longitude: 106.68438102678479),
+    BusStop(id: "def7dfee-0ed7-436e-9b92-5e84ee9098a5", name: "Pasar Modern Timur", latitude: -6.305383085361065, longitude: 106.68585155674857),
+    BusStop(id: "0cfd5c79-81d7-4129-8f40-4b6d65450dee", name: "Griya Loka 1", latitude: -6.304838063682196, longitude: 106.68243904339846),
+    BusStop(id: "1ae85ae8-2a89-4589-bbbc-a7d05fea4cad", name: "Halte Sektor 1.3", latitude: -6.305782554562039, longitude: 106.679950787125),
+    BusStop(id: "e1338548-9104-4974-81d9-c8bd27c88050", name: "Griya Loka 2", latitude: -6.305092590569297, longitude: 106.68156052021361),
+    BusStop(id: "d91518b1-63b5-44ab-8c67-4fb29e7e83ec", name: "Santa Ursula 1", latitude: -6.3029027815124765, longitude: 106.68461219968776),
+    BusStop(id: "53ce27f1-36fa-42b8-97cb-826291c6cce3", name: "Santa Ursula 2", latitude: -6.300624123510825, longitude: 106.68324973142732),
+    BusStop(id: "90b5d12e-77c1-41bd-885a-a73fc4a9a437", name: "Sentra Onderdil", latitude: -6.297111430054876, longitude: 106.68133116239241),
+    BusStop(id: "5067bf11-7991-4a33-86e6-c5c2f0205910", name: "Autoparts", latitude: -6.29552127506876, longitude: 106.67807954837764),
+    BusStop(id: "8fdddd82-32fd-487b-beaa-ea7ae74224ed", name: "Eka Hospital 2", latitude: -6.299476321496019, longitude: 106.67002055793128),
+    BusStop(id: "be0e2975-c98b-4a3f-9b01-980b39b16a8d", name: "East Business District", latitude: -6.299723084217261, longitude: 106.66683114066281),
+    BusStop(id: "6838df02-9eb2-45df-9711-e11729af0aa8", name: "SWA 1", latitude: -6.299903216764688, longitude: 106.66238967328833),
+    BusStop(id: "2c4c9397-6cdb-4cc4-93d3-fcda6e4a350b", name: "ICON Business Park", latitude: -6.31742161585726, longitude: 106.64910068202047),
+    BusStop(id: "f32e69e1-f744-4305-a85f-ff9c9690e489", name: "Masjid Al Ukhuwah", latitude: -6.315192567508164, longitude: 106.65351013016254),
+    BusStop(id: "064ab594-dd8b-4e25-aea0-8e26fae261ef", name: "Divena & Deshna", latitude: -6.319321964751367, longitude: 106.65533072146577),
+    BusStop(id: "5cd035cf-fcc5-4f19-a8c0-d98d48c5c014", name: "The Avani Clubhouse", latitude: -6.317333375709284, longitude: 106.65844255837158),
+    BusStop(id: "4dc3efa4-ed8b-4162-96e2-cd7d61b4b84e", name: "Ammarilla", latitude: -6.31947192225568, longitude: 106.6552502552004),
+    BusStop(id: "68f0ac64-44c8-44a1-9087-0789b19c8e21", name: "Chadnya", latitude: -6.317441184494497, longitude: 106.65390220059183),
+    BusStop(id: "494331df-46bc-4979-ad67-3c8ab14addb4", name: "Universitas Atma Jaya", latitude: -6.317530757538934, longitude: 106.64982141245747),
+    BusStop(id: "c4326871-1152-4a98-a017-40a3dcd3f6b8", name: "Nava Park 2", latitude: -6.291031333028396, longitude: 106.64976067055221),
+    BusStop(id: "ff6ddaa7-1337-4ba4-a8b2-8719e26aa4d9", name: "Giardina", latitude: -6.291453224456054, longitude: 106.64829232477881),
+    BusStop(id: "31f2c823-55a6-46a9-9980-155970344fd1", name: "Collinare", latitude: -6.29086202644475, longitude: 106.645319424561),
+    BusStop(id: "c9ce799e-fd9b-418f-948f-aba4226138e8", name: "Foglio", latitude: -6.2938588806943985, longitude: 106.64304339184812),
+    BusStop(id: "30eb7922-8102-49b4-941a-6e2899d6c6b4", name: "Studento 2", latitude: -6.295472708653217, longitude: 106.64214013025904),
+    BusStop(id: "1e8fd4a3-7f14-4aa7-8438-b112bad15a09", name: "Albera", latitude: -6.296645328635628, longitude: 106.64466956974762),
+    BusStop(id: "f75b3b82-8d3e-4983-aee4-c264839be7f5", name: "Foresta 1", latitude: -6.296870341664718, longitude: 106.64775959919521),
+    BusStop(id: "d731f581-7b42-4001-a5c8-e4ad1f9c6f25", name: "FBL 5", latitude: -6.288252060062549, longitude: 106.64421085363966)
+]
