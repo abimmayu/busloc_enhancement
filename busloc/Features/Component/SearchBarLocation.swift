@@ -27,9 +27,6 @@ struct SearchBarLocation: View {
                 .onSubmit {
                     viewModel.performSearch()
                 }
-                .onTapGesture {
-                    
-                }
             }
             .padding()
             .background(.white)
@@ -61,6 +58,26 @@ struct SearchBarLocation: View {
                         ]
                 )
             )
+            
+            if(viewModel.isLoadingRoutes) {
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle())
+                    .tint(Color("Primary"))
+                    .scaleEffect(2.0)
+                    .padding(.top, 30)
+            }
+            
+            if(viewModel.errorText != nil) {
+                Text(viewModel.errorText ?? "")
+                    .font(.title3)
+                    .foregroundColor(.black)
+                    .multilineTextAlignment(.center)
+                    .padding(
+                        .top, 50
+                    )
+                
+            }
+            
             if(!viewModel.searchResults.isEmpty) {
                 ScrollView {
                     LazyVStack(spacing: 12) {
@@ -105,6 +122,7 @@ struct SearchBarLocation: View {
                     LazyVStack(spacing: 12) {
                         ForEach(viewModel.searchRouteResult, id: \.self) { item in
                             RouteResultCard(
+                                isSelected: item == viewModel.selectedRoute,
                                 time: "\(item.totalDuration)",
                                 routeName: "Rute \(item.route.busNumber)",
                                 route: "\(item.stopNames.first!) - \(item.stopNames.last!)",
@@ -120,6 +138,9 @@ struct SearchBarLocation: View {
                 }
                 .padding(
                     [.top], 20
+                )
+                .padding(
+                    .bottom, 100
                 )
             }
             Spacer()

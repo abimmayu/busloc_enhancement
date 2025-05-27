@@ -7,80 +7,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D0FA23FE-B36F-4FF9-877E-50F28ECC64D8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "busloc/Features/MapSearch/MapSearchViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
-            landmarkName = "findFastestRoutes()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "AE62215C-0DB6-4DCD-9594-FC091696275D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "busloc/Features/MapSearch/MapSearchViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "findFastestRoutes()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8E09D8A8-0890-419E-BB6E-60A71ABDFE85"
+            uuid = "1C4F5706-A056-428A-AE07-E81FE11CCB0B"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "busloc/Features/MapSearch/MapSearchViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "findFastestRoutes()"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
+            landmarkName = "findAllPossibleRoutes()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AC693B11-3134-487F-8951-3C3146876D33"
+            uuid = "B93B16B9-1B38-4ADC-9E36-3A5FB6D8AE01"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "busloc/Features/MapSearch/MapSearchViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "findFastestRoutes()"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "findAllPossibleRoutes()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "204FE0EF-4117-4599-844A-8BF486113861"
-            shouldBeEnabled = "Yes"
+            uuid = "B1522C77-1504-49B7-A703-C82D34DBF2A3"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "busloc/Features/MapSearch/MapSearchViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
-            landmarkName = "updatePolylineForSelectedRoute()"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "findAllPossibleRoutes()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

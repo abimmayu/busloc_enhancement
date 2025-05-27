@@ -7,6 +7,7 @@ struct SearchView: View {
     @State private var isSelectingEnd = false
     @State private var searchResults: [(bus: Bus, count: Int)] = []
     @State private var expandedBusNames: Set<String> = []
+    @State private var showMap = false
 
     let items: [Bus] = busData
     var allStops: [String] {
@@ -16,10 +17,24 @@ struct SearchView: View {
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading, spacing: 20) {
-                Text("Find Best Route")
-                    .foregroundColor(Color.black)
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
+                HStack {
+                    Text("Find Best Route")
+                        .foregroundColor(Color.black)
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+//                    Spacer()
+//                    Button {
+//                        showMap = true
+//                    } label: {
+//                        Image(systemName: "map.circle.fill")
+//                            .resizable()
+//                            .frame(width: 48, height: 48)
+//                            .foregroundColor(.orange)
+//                    }
+//                    .fullScreenCover(isPresented: $showMap) {
+//                        MapSearchView()
+//                    }
+                }
                     
                 // Starting Stop Picker
                 VStack(alignment: .leading) {

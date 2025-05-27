@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RouteResultCard: View {
+    var isSelected: Bool = false
     var time: String?
     var routeName: String?
     var route: String?
@@ -57,7 +58,7 @@ struct RouteResultCard: View {
             .frame(maxWidth: .infinity)
         }
         .frame(maxWidth: .infinity, maxHeight: 70)
-        .background(.white)
+        .background(isSelected ? Color("PrimaryLighter") : .white)
         .cornerRadius(8)
         
     }

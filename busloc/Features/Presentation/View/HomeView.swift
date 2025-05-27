@@ -103,7 +103,7 @@ struct HomeView: View {
         .navigationBarTitle(
             selectedTab == 0 ? Text("") :
                 selectedTab == 1 ? Text("Search The Route") :
-                Text("Search Nearest Bus-Stop"), displayMode: .inline
+                Text("Search the Route"), displayMode: .inline
         )
     }
 }
